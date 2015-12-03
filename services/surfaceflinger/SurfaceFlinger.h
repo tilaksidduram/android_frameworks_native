@@ -475,6 +475,7 @@ private:
     void logFrameStats();
 
     void dumpStaticScreenStats(String8& result) const;
+    virtual void dumpDrawCycle(bool /* prePrepare */ ) { }
 
     /* ------------------------------------------------------------------------
      * Attributes
