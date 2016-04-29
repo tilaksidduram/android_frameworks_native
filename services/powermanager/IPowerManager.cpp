@@ -39,7 +39,7 @@ enum {
 class BpPowerManager : public BpInterface<IPowerManager>
 {
 public:
-    BpPowerManager(const sp<IBinder>& impl)
+    explicit BpPowerManager(const sp<IBinder>& impl)
         : BpInterface<IPowerManager>(impl)
     {
     }
